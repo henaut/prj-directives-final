@@ -9,7 +9,7 @@ export class ShoppingListService {
   getIngredients() {
     return this.ingredients.slice();
   }
-  addIngredient( ingredient: Ingredient) {
+  addIngredient( ingredient: Ingredient): void {
     this.ingredients.push(ingredient);
 
   }
