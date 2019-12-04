@@ -29,7 +29,12 @@ export class RecipeService {
   }
 
   getRecipes() {
+    // slice nous donne une copie de notre tableau
     return this.recipes.slice();
+  }
+
+  getRecipeById(id: number) {
+    return this.recipes[id];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
